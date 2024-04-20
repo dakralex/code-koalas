@@ -46,7 +46,6 @@ body {
 #root {
   display: grid;
   grid-template-columns: 2fr 8fr;
-  grid-template-rows: 8fr 2fr;
   width: 100%;
   min-height: inherit;
   margin: 0 auto;
@@ -153,6 +152,10 @@ ul {
 
 .sidebar, .timeline {
   background-color: var(--foreground);
+}
+
+.map-container {
+  display: flex;
 }
 
 .logo {
