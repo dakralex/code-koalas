@@ -6,7 +6,7 @@ import pandas as pd
 
 myDat = []
 
-with open("data/Radverkehrsanlagen.geojson", 'r') as f:
+with open("data/source/Radverkehrsanlagen.geojson", 'r') as f:
     data = json.load(f)  
 
 

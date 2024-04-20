@@ -6,7 +6,32 @@ from project_types import ProjectTypes
 
 
 
-with open('data/infravelo-projects.json', 'r') as f:
+def func(coordinates):
+    
+    koorStr = coordinates.get("coordinates")
+    koorArr = koorStr.split(",")
+    for count, i in enumerate(koorArr):
+        if (i[0] == "0"):
+            koorArr[count] = i[2:]
+            i = i[2:]
+        if (i == ""): continue
+        koorArr[count] = float(i)
+    if (koorArr[len(koorArr)-1] == ''): koorArr.pop(len(koorArr)-1)
+    owsn = []
+    koorPerfect = []
+    for count in range(0,len(koorArr)):
+        owsn.append(koorArr[count])
+        if (len(owsn) == 2):
+            koorPerfect.append(owsn.copy())
+            owsn.pop(0)
+            owsn.pop(0)
+    return koorPerfect
+
+
+
+
+
+with open('data/source/infravelo-projects.json', 'r') as f:
     data = json.load(f)
     #for i in range(0, 5):
         #print(json.dumps(data[i]))
@@ -38,7 +63,7 @@ type_values_wanted = ['Sonderweg', 'Zweirichtungsradweg', 'Bussonderfahrstreifen
 
 
 
-with open('data/infravelo-projects.json', 'r') as f:
+with open('data/source/infravelo-projects.json', 'r') as f:
     json_string = f.read()
 
 # Konvertierung des JSON-Strings in ein Python-Dictionary
@@ -109,40 +134,61 @@ for pro in wanted_data_attr:
             #pp.pprint(coordinates)
             count += 1
     
+    koorPerfect = []
+    if (coordinates == 0): continue
     if isinstance(coordinates, dict):
-        
-        koorStr = coordinates.get("coordinates")
-        koorArr = koorStr.split(",")
-        
-        for count, i in enumerate(koorArr):
-            if (i[0] == "0"):
-                koorArr[count] = i[2:]
-                i = i[2:]
-            if (i == ""): continue
-            koorArr[count] = float(i)
-            
-        if (koorArr[len(koorArr)-1] == ''): koorArr.pop(len(koorArr)-1)
-
-        owsn = []
-        koorPerfect = []
-        for count in range(0,len(koorArr)):
-            
-            owsn.append(koorArr[count])
-            
-            if (len(owsn) == 2):
-                print(owsn)
-                koorPerfect.append(owsn.copy())
-                owsn.pop(0)
-                owsn.pop(0)
-                
-        break
-            
-
-    #if isinstance(coordinates, list):
+        print('in if')
+        koorPerfect = func(coordinates)
+    else:
+        print('in else')
         #for i in coordinates:
+        for i in range(0, len(coordinates)):
+            perfectPart = func(coordinates[i])
+            koorPerfect.append(perfectPart)
             
+        
+            
+    myProjects.append(Projekt(typ, year, start, stop, koorPerfect))
     
-        
-        
+
+    
+    
+dicts = []
+
+quartals = ["1.2018", "2.2018", "3.2018", "4.2018",
+            "1.2019", "2.2019", "3.2019", "4.2019",
+            "1.2020", "2.2020", "3.2020", "4.2020",
+            "1.2021", "2.2021", "3.2021", "4.2021",
+            "1.2022", "2.2022", "3.2022", "4.2022",
+            "1.2023", "2.2023", "3.2023", "4.2023"
+            ]
+
+for i in quartals:
+
+    quartal_projects = []
+    
+    for j in myProjects:
+    
+        if (j.stop == i):
             
-    #myProjects.append(Projekt(type, year, start, stop))
+            one = {
+                "type": j.type.value,
+                "coos": j.koords
+            }
+            quartal_projects.append(one)
+    
+    dictionary = {
+        "quartal": i,
+        "projects": quartal_projects
+    }
+    
+    dicts.append(dictionary)
+
+
+# Serializing json
+json_object = json.dumps(dicts, indent=4)
+with open("data/processed/bike_projects.json", "a") as outfile:
+    outfile.write(json_object)
+
+
+print("done")
