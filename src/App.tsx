@@ -1,10 +1,10 @@
-//import React from 'react';
 import './assets/app.css'; // Separate import statement for CSS file
-import Slider from './slider.tsx';
 import 'leaflet/dist/leaflet.css';
-import { MapContainer, Polyline } from "react-leaflet";
-import coords, { maxLat, maxLongs, minLat, minLongs } from "./globals/outline.ts";
-import { LatLng, LatLngBounds } from "leaflet";
+import {MapContainer, Polyline} from "react-leaflet";
+import coords, {maxLat, maxLongs, minLat, minLongs} from "./globals/outline.ts";
+import {LatLng, LatLngBounds} from "leaflet";
+
+//const COORDS = [...Array(15000)].map((_, i) => <Polyline key={i} positions={[[minLat , minLongs], [maxLat, maxLongs]]}/>);
 
 const App = () => {
     const outlineCoords = coords.map(p => new LatLng(p[1], p[0]));
@@ -13,16 +13,13 @@ const App = () => {
 
     return (
         <>
-            <div className="sidebar"></div>
-            <div className="map-container">
-                <MapContainer bounds={mapBounds} center={centerCoords} minZoom={11} zoom={11} zoomSnap={0.25}
-                              style={{ width: '100%', backgroundColor: '#242424' }}>
-                    <Polyline positions={outlineCoords} pathOptions={{ color: '#dedede', fillColor: 'none' }}></Polyline>
-                </MapContainer>
+            <div className="sidebar">
             </div>
-            <div className="logo"></div>
-            <div className="timeline">
-                <Slider min={0} max={48} step={1} />
+            <div className="map-container">
+                <MapContainer bounds={mapBounds} center={centerCoords} zoom={11} zoomSnap={0.25}
+                              style={{width: '100%', backgroundColor: '#242424'}}>
+                    <Polyline positions={outlineCoords} pathOptions={{color: '#dedede', fillColor: 'none'}}></Polyline>
+                </MapContainer>
             </div>
         </>
     );
