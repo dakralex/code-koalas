@@ -1,35 +1,25 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import './assets/app.css'
+import 'leaflet/dist/leaflet.css'
+import {MapContainer, Polyline} from "react-leaflet";
+import coords, {maxLat, maxLongs, minLat, minLongs} from "./globals/outline.ts";
+import {LatLng, LatLngBounds} from "leaflet";
 
-function App() {
-  const [count, setCount] = useState(0)
+const App = () => {
+    const outlineCoords = coords.map(p => new LatLng(p[1], p[0]));
+    const mapBounds = new LatLngBounds(new LatLng(minLat, minLongs), new LatLng(maxLat, maxLongs));
+    const centerCoords = new LatLng((minLat + maxLat) / 2, (minLongs + maxLongs) / 2);
 
-  return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+    return <>
+        <div className="sidebar">
+        </div>
+        <div className="map-container">
+            <MapContainer bounds={mapBounds} center={centerCoords} minZoom={11} zoom={11} zoomSnap={0.25}
+                          style={{width: '100%', backgroundColor: '#242424'}}>
+                <Polyline positions={outlineCoords} pathOptions={{color: '#dedede', fillColor: 'none'}}></Polyline>
+                
+            </MapContainer>
+        </div>
     </>
-  )
-}
+};
 
 export default App

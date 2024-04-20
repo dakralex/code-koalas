@@ -1,0 +1,187 @@
+@import "variables.css";
+@import "assets.css";
+@import "base.css";
+
+html {
+  font-family: var(--font-paragraph);
+  color: var(--foreground);
+  background-color: var(--background);
+
+  /* Instruct the browser to use only the site's font faces and optimize for legibility */
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Customize the scrollbar to be thin, rounded and use the primary color */
+  scrollbar-width: auto;
+  scrollbar-color: var(--foreground) var(--background-light);
+  scroll-behavior: smooth;
+
+  &::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: var(--background-light);
+  }
+
+  &::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background-color: var(--foreground);
+  }
+
+  /* Customize the text selection to a lighter background color */
+
+  & ::selection,
+  & ::-moz-selection {
+    background: var(--background-light);
+  }
+}
+
+body {
+  min-height: 100vh;
+}
+
+#root {
+  display: grid;
+  grid-template-columns: 2fr 8fr;
+  width: 100%;
+  min-height: inherit;
+  margin: 0 auto;
+}
+
+button:focus {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  hyphens: auto;
+  overflow-wrap: break-word;
+}
+
+h1 {
+  font-family: var(--font-heading);
+  font-size: 2.25rem;
+  font-weight: 300;
+
+  line-height: 2.5rem;
+  color: var(--foreground);
+
+  @media (--min-screen-xs) {
+    font-size: 3rem;
+    line-height: 1;
+  }
+
+  @media (--min-screen-md) {
+    font-size: 3.75rem;
+    line-height: 1;
+  }
+
+  @media (--min-screen-2xl) {
+    font-size: 4.5rem;
+    line-height: 1;
+  }
+}
+
+h2 {
+  font-family: var(--font-heading);
+  font-size: 1.875rem;
+
+  font-weight: 300;
+  line-height: 2.25rem;
+
+  @media (--min-screen-md) {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+}
+
+h3 {
+  font-family: var(--font-subheading);
+  font-size: 1.25rem;
+
+  font-weight: bold;
+  line-height: 1.75rem;
+
+  @media (--min-screen-xs) {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  @media (--min-screen-2xl) {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+}
+
+h4 {
+  font-family: var(--font-subheading);
+  font-size: 1.25rem;
+
+  font-weight: bold;
+  line-height: 1.5rem;
+}
+
+p {
+  font-family: var(--font-paragraph);
+  font-size: 1.125rem;
+
+  font-weight: 300;
+  line-height: 1.25rem;
+}
+
+label {
+  font-family: var(--font-paragraph);
+  font-weight: 300;
+}
+
+strong {
+  font-weight: 500;
+}
+
+ol,
+ul {
+  padding-left: 1.25rem;
+  list-style-type: decimal;
+}
+
+.sidebar, .timeline {
+  background-color: var(--foreground);
+}
+
+.map-container {
+  display: flex;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}

@@ -1,0 +1,34 @@
+:root {
+    --font-heading: "Fira Sans";
+    --font-subheading: "Puritan";
+    --font-paragraph: "Nunito";
+
+    --foreground: #242424;
+    --background: #dedede;
+    --background-light: #9e9e9e;
+
+    --green: #d9edbf;
+    --orange: #ffcf81;
+    --red: #ffb996;
+    --yellow: #fdffab;
+
+    --screen-xs: 26rem;
+    --screen-sm: 40rem;
+    --screen-md: 48rem;
+    --screen-lg: 64rem;
+    --screen-xl: 80rem;
+    --screen-2xl: 96rem;
+
+    @media (prefers-color-scheme: dark) {
+        --foreground: #dedede;
+        --background: #242424;
+        --background-light: #646464;
+    }
+}
+
+@custom-media --min-screen-xs (min-width: 26rem);
+@custom-media --min-screen-sm (min-width: 40rem);
+@custom-media --min-screen-md (min-width: 48rem);
+@custom-media --min-screen-lg (min-width: 64rem);
+@custom-media --min-screen-xl (min-width: 80rem);
+@custom-media --min-screen-2xl (min-width: 96rem);
