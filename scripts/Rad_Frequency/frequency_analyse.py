@@ -45,12 +45,12 @@ def cyclists_per_month (csv_file):
     
 
 
-file2018 = open('data2018.csv')
-file2019 = open('data2019.csv')
-file2020 = open('data2020.csv')
-file2021 = open('data2021.csv')
-file2022 = open('data2022.csv')
-file2023 = open('data2023.csv')
+file2018 = open('scripts/Rad_Frequency/data2018.csv')
+file2019 = open('scripts/Rad_Frequency/data2019.csv')
+file2020 = open('scripts/Rad_Frequency/data2020.csv')
+file2021 = open('scripts/Rad_Frequency/data2021.csv')
+file2022 = open('scripts/Rad_Frequency/data2022.csv')
+file2023 = open('scripts/Rad_Frequency/data2023.csv')
 
 cyclists_per_month_result = []
 
@@ -92,4 +92,4 @@ with open("result.csv", mode='w', newline='') as file:
 
 csv_file = pd.DataFrame(pd.read_csv("result.csv", sep = ",", header = 0,encoding ='utf-8'))
 
-csv_file.to_json("cyclists.json", orient = "records", date_format = "epoch", double_precision = 10, force_ascii = True, date_unit = "ms", default_handler = None)
+csv_file.to_json("data/processed/cyclists.json", orient = "records", date_format = "epoch", double_precision = 10, force_ascii = True, date_unit = "ms", default_handler = None)

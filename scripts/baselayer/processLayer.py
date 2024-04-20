@@ -41,7 +41,7 @@ for i in bikeRoads:
     
 # Serializing json
 json_object = json.dumps(dicts, indent=4)
-with open("data/baseLayer.json", "a") as outfile:
+with open("data/processed/baseLayer.json", "a") as outfile:
     outfile.write(json_object)
 
 
