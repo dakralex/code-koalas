@@ -1,7 +1,9 @@
 import json
 import pprint
+import xmltodict
 from project import Projekt
 from project_types import ProjectTypes
+
 
 
 with open('data/infravelo-projects.json', 'r') as f:
@@ -66,15 +68,15 @@ print(wanted_data_attr[1])
 
 myProjects = []
 
-count = 0
+count_error = 0
 for pro in wanted_data_attr:
     
-    type = pro.get("types")
-    for i in type:
+    typ = pro.get("types")
+    for i in typ:
         if i.get("type") in type_values_wanted:
-                type = i.get("type").replace("-","")
-                type = type.replace(" ", "_")
-                type = ProjectTypes[type]
+                typ = i.get("type").replace("-","")
+                typ = typ.replace(" ", "_")
+                typ = ProjectTypes[typ]
 
     
     
@@ -91,6 +93,56 @@ for pro in wanted_data_attr:
     if (stop != None):
         stop = stop[0:2] + stop[-4:]
         
-    myProjects.append(Projekt(type, year, start, stop))
     
-    count += 1
+    
+    coordinates = 0
+    json_data = xmltodict.parse(pro['kml'])
+
+    try:
+        json_data['kml']['Document']['Folder'][1]['Placemark']
+    except KeyError:
+        count_error += 1
+    else:
+        if 'MultiGeometry' in json_data['kml']['Document']['Folder'][1]['Placemark'] :
+            coordinates = json_data['kml']['Document']['Folder'][1]['Placemark']['MultiGeometry']['LineString']
+            #pp = pprint.PrettyPrinter(indent=4)
+            #pp.pprint(coordinates)
+            count += 1
+    
+    if isinstance(coordinates, dict):
+        
+        koorStr = coordinates.get("coordinates")
+        koorArr = koorStr.split(",")
+        
+        for count, i in enumerate(koorArr):
+            if (i[0] == "0"):
+                koorArr[count] = i[2:]
+                i = i[2:]
+            if (i == ""): continue
+            koorArr[count] = float(i)
+            
+        if (koorArr[len(koorArr)-1] == ''): koorArr.pop(len(koorArr)-1)
+
+        owsn = []
+        koorPerfect = []
+        for count in range(0,len(koorArr)):
+            
+            owsn.append(koorArr[count])
+            
+            if (len(owsn) == 2):
+                print(owsn)
+                koorPerfect.append(owsn.copy())
+                owsn.pop(0)
+                owsn.pop(0)
+                
+        break
+            
+
+    #if isinstance(coordinates, list):
+        #for i in coordinates:
+            
+    
+        
+        
+            
+    #myProjects.append(Projekt(type, year, start, stop))
