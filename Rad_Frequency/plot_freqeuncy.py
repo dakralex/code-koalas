@@ -17,7 +17,7 @@ def get_data (file):
     return cyclists
 
 
-data = get_data(open('cyclists.json'))
+data = get_data(open("Rad_Frequency/cyclists.json"))
 
 data = np.array(data)
 
