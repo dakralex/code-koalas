@@ -1,29 +1,49 @@
-import './assets/app.css'; // Separate import statement for CSS file
+import './assets/app.css';
 import 'leaflet/dist/leaflet.css';
+import accidents from '../data/processed/accidents.json';
+import BASE_LAYER from '../data/processed/baseLayer.json';
+
+import {useEffect, useState} from "react";
+import L, {LatLng, LatLngBounds} from "leaflet";
 import {MapContainer, Polyline} from "react-leaflet";
 import {useLeafletContext} from '@react-leaflet/core';
 import coords, {maxLat, maxLongs, minLat, minLongs} from "./globals/outline.ts";
-import {LatLng, LatLngBounds} from "leaflet";
-import L from 'leaflet';
-import {useEffect, useState} from 'react';
-import accidents from '../data/processed/accidents.json';
 
 
 function Point({ long, lat }: { long: number, lat: number }) {
   const context = useLeafletContext();
 
   useEffect(() => {
-    const latLng = L.latLng(lat, long); // Note the order of arguments
+    const latLng = L.latLng(lat, long);
     const container = context.map;
-    const marker = L.marker(latLng); // Create a marker using the LatLng object
-    marker.addTo(container);
+    let marker: any;
+
+    // Add a delay of 500 milliseconds before adding the marker
+    const addMarkerWithDelay = async () => {
+      await timeout(1000);
+      marker = L.marker(latLng, {
+        icon: L.divIcon({ className: 'custom-marker-icon', iconSize: [2, 2] }) // Adjust the iconSize as needed
+      });
+      marker.addTo(container);
+    };
+
+    addMarkerWithDelay();
 
     return () => {
-      marker.remove(); // Remove the marker when component unmounts
+      // Ensure that the marker is removed when the component unmounts
+      if (marker) {
+        container.removeLayer(marker);
+      }
     };
-  }, [context.layerContainer, context.map, lat, long]);
+  }, [context.map, lat, long]);
 
   return null;
+}
+
+
+// Function to create a delay
+function timeout(delay: number) {
+  return new Promise(res => setTimeout(res, delay));
 }
 //const COORDS = [...Array(15000)].map((_, i) => <Polyline key={i} positions={[[minLat , minLongs], [maxLat, maxLongs]]}/>);
 
@@ -40,6 +60,21 @@ const App = () => {
       setAccidentCoords(coords);
     }, []);
 
+    const [lanes, setLanes] = useState([]);
+
+    useEffect(() => {
+        // @ts-ignore
+        const arr = Array.from(BASE_LAYER).map(item => {
+            // @ts-ignore
+            const latLngPts = item?.coos.map(pt => new LatLng(pt[1], pt[0]));
+
+            return <Polyline positions={latLngPts} />;
+        });
+
+        // @ts-ignore
+        setLanes(arr)
+    }, []);
+
     return (
         <>
             <div className="sidebar">
@@ -48,10 +83,10 @@ const App = () => {
                 <MapContainer bounds={mapBounds} center={centerCoords} zoom={11} zoomSnap={0.25}
                               style={{width: '100%', backgroundColor: '#242424'}}>
                     <Polyline positions={outlineCoords} pathOptions={{color: '#dedede', fillColor: 'none'}}></Polyline>
-                   <Point lat={(minLat + maxLat) / 2} long={(minLongs + maxLongs) / 2}></Point>
                     {accidentCoords.map((coord, index) => (
-                      <Point key={index} lat={coord.lat} long = {coord.lng} />
+                      <Point key={index} lat={coord.lat} long={coord.lng} />
                     ))}
+                    {...lanes}
                 </MapContainer>
             </div>
         </>
