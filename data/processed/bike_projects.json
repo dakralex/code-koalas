@@ -7,7 +7,7 @@
         "quartal": "2.2018",
         "projects": [
             {
-                "type": "Radfahrstreifen",
+                "type": 1,
                 "coos": [
                     [
                         13.5646861767,
@@ -36,7 +36,7 @@
                 ]
             },
             {
-                "type": "Baulich getrennter Radweg",
+                "type": 0,
                 "coos": [
                     [
                         [
@@ -107,7 +107,7 @@
                 ]
             },
             {
-                "type": "Baulich getrennter Radweg",
+                "type": 0,
                 "coos": [
                     [
                         13.3423244241,
@@ -136,7 +136,7 @@
                 ]
             },
             {
-                "type": "Baulich getrennter Radweg",
+                "type": 0,
                 "coos": [
                     [
                         13.3427838001,
@@ -178,7 +178,7 @@
         "quartal": "3.2018",
         "projects": [
             {
-                "type": "Gesch\u00fctzter Radfahrstreifen",
+                "type": 1,
                 "coos": [
                     [
                         13.5850952902,
@@ -207,7 +207,7 @@
                 ]
             },
             {
-                "type": "Gemeinsamer Geh- und Radweg",
+                "type": 1,
                 "coos": [
                     [
                         13.4696240993,
@@ -276,7 +276,7 @@
                 ]
             },
             {
-                "type": "Schutzstreifen",
+                "type": 3,
                 "coos": [
                     [
                         [
@@ -461,7 +461,7 @@
                 ]
             },
             {
-                "type": "Radfahrstreifen",
+                "type": 1,
                 "coos": [
                     [
                         [
@@ -529,7 +529,7 @@
         "quartal": "4.2018",
         "projects": [
             {
-                "type": "Gemeinsamer Geh- und Radweg",
+                "type": 1,
                 "coos": [
                     [
                         [
@@ -558,7 +558,7 @@
                 ]
             },
             {
-                "type": "Baulich getrennter Radweg",
+                "type": 0,
                 "coos": [
                     [
                         [
@@ -871,7 +871,7 @@
                 ]
             },
             {
-                "type": "Gesch\u00fctzter Radfahrstreifen",
+                "type": 1,
                 "coos": [
                     [
                         13.3432764997,
@@ -912,7 +912,7 @@
                 ]
             },
             {
-                "type": "Radfahrstreifen",
+                "type": 1,
                 "coos": [
                     [
                         [
@@ -1067,7 +1067,7 @@
                 ]
             },
             {
-                "type": "Radfahrstreifen",
+                "type": 1,
                 "coos": [
                     [
                         [
@@ -1222,7 +1222,7 @@
                 ]
             },
             {
-                "type": "Radfahrstreifen",
+                "type": 1,
                 "coos": [
                     [
                         [
@@ -1377,7 +1377,7 @@
                 ]
             },
             {
-                "type": "Gemeinsamer Geh- und Radweg",
+                "type": 1,
                 "coos": [
                     [
                         13.7186910212,
@@ -1398,7 +1398,7 @@
                 ]
             },
             {
-                "type": "Schutzstreifen",
+                "type": 3,
                 "coos": [
                     [
                         13.6164358997,
@@ -1531,7 +1531,7 @@
                 ]
             },
             {
-                "type": "Sonderweg",
+                "type": 1,
                 "coos": [
                     [
                         [
@@ -1624,7 +1624,7 @@
                 ]
             },
             {
-                "type": "Schutzstreifen",
+                "type": 3,
                 "coos": [
                     [
                         13.3290573002,
@@ -1657,7 +1657,7 @@
                 ]
             },
             {
-                "type": "Schutzstreifen",
+                "type": 3,
                 "coos": [
                     [
                         13.3143829002,
@@ -1702,7 +1702,7 @@
                 ]
             },
             {
-                "type": "Radfahrstreifen",
+                "type": 1,
                 "coos": [
                     [
                         13.2822056994,
@@ -1835,7 +1835,7 @@
                 ]
             },
             {
-                "type": "Radfahrstreifen",
+                "type": 1,
                 "coos": [
                     [
                         13.2822056994,
@@ -1968,7 +1968,7 @@
                 ]
             },
             {
-                "type": "Radfahrstreifen",
+                "type": 1,
                 "coos": [
                     [
                         13.2822056994,
@@ -2101,7 +2101,7 @@
                 ]
             },
             {
-                "type": "Baulich getrennter Radweg",
+                "type": 0,
                 "coos": [
                     [
                         [
@@ -2284,7 +2284,7 @@
                 ]
             },
             {
-                "type": "Baulich getrennter Radweg",
+                "type": 0,
                 "coos": [
                     [
                         13.1780611002,
@@ -2314,7 +2314,7 @@
         "quartal": "2.2019",
         "projects": [
             {
-                "type": "Baulich getrennter Radweg",
+                "type": 0,
                 "coos": [
                     [
                         13.6487997001,
@@ -2395,7 +2395,7 @@
                 ]
             },
             {
-                "type": "Baulich getrennter Radweg",
+                "type": 0,
                 "coos": [
                     [
                         13.6487997001,
@@ -2476,7 +2476,7 @@
                 ]
             },
             {
-                "type": "Baulich getrennter Radweg",
+                "type": 0,
                 "coos": [
                     [
                         13.3563562947,
@@ -2518,7 +2518,7 @@
         "quartal": "3.2019",
         "projects": [
             {
-                "type": "Querungshilfe",
+                "type": 4,
                 "coos": [
                     [
                         [
@@ -2593,7 +2593,7 @@
                 ]
             },
             {
-                "type": "Querungshilfe",
+                "type": 4,
                 "coos": [
                     [
                         [
@@ -2668,7 +2668,7 @@
                 ]
             },
             {
-                "type": "Gesch\u00fctzter Radfahrstreifen",
+                "type": 1,
                 "coos": [
                     [
                         13.4500427002,
@@ -2757,7 +2757,7 @@
                 ]
             },
             {
-                "type": "Querungshilfe",
+                "type": 4,
                 "coos": [
                     [
                         13.6532107998,
@@ -2806,7 +2806,7 @@
                 ]
             },
             {
-                "type": "Querungshilfe",
+                "type": 4,
                 "coos": [
                     [
                         13.6532107998,
@@ -2855,7 +2855,7 @@
                 ]
             },
             {
-                "type": "Querungshilfe",
+                "type": 4,
                 "coos": [
                     [
                         13.6532107998,
@@ -2904,7 +2904,7 @@
                 ]
             },
             {
-                "type": "Baulich getrennter Radweg",
+                "type": 0,
                 "coos": [
                     [
                         13.530262,
@@ -2965,7 +2965,7 @@
                 ]
             },
             {
-                "type": "Radfahrstreifen",
+                "type": 1,
                 "coos": [
                     [
                         13.5542550998,
@@ -3078,7 +3078,7 @@
                 ]
             },
             {
-                "type": "Radfahrstreifen",
+                "type": 1,
                 "coos": [
                     [
                         13.5542550998,
@@ -3191,7 +3191,7 @@
                 ]
             },
             {
-                "type": "Fahrradstra\u00dfe",
+                "type": 0,
                 "coos": [
                     [
                         13.5077170002,
@@ -3240,7 +3240,7 @@
                 ]
             },
             {
-                "type": "Radfahrstreifen",
+                "type": 1,
                 "coos": [
                     [
                         [
@@ -3405,7 +3405,7 @@
                 ]
             },
             {
-                "type": "Radfahrstreifen",
+                "type": 1,
                 "coos": [
                     [
                         [
@@ -3570,7 +3570,7 @@
                 ]
             },
             {
-                "type": "Fahrradstra\u00dfe",
+                "type": 0,
                 "coos": [
                     [
                         [
@@ -3785,7 +3785,7 @@
                 ]
             },
             {
-                "type": "Fahrradstra\u00dfe",
+                "type": 0,
                 "coos": [
                     [
                         [
@@ -4000,7 +4000,7 @@
                 ]
             },
             {
-                "type": "Radfahrstreifen",
+                "type": 1,
                 "coos": [
                     [
                         13.1939839223,
@@ -4029,7 +4029,7 @@
                 ]
             },
             {
-                "type": "Baulich getrennter Radweg",
+                "type": 0,
                 "coos": [
                     [
                         13.3522593005,
@@ -4070,7 +4070,7 @@
                 ]
             },
             {
-                "type": "Baulich getrennter Radweg",
+                "type": 0,
                 "coos": [
                     [
                         13.3549088995,
@@ -4091,7 +4091,7 @@
                 ]
             },
             {
-                "type": "Baulich getrennter Radweg",
+                "type": 0,
                 "coos": [
                     [
                         13.4536943007,
@@ -4104,7 +4104,7 @@
                 ]
             },
             {
-                "type": "Fahrradstra\u00dfe",
+                "type": 0,
                 "coos": [
                     [
                         13.4988007994,
@@ -4258,7 +4258,7 @@
         "quartal": "4.2019",
         "projects": [
             {
-                "type": "Schutzstreifen",
+                "type": 3,
                 "coos": [
                     [
                         [
@@ -4401,7 +4401,7 @@
                 ]
             },
             {
-                "type": "Schutzstreifen",
+                "type": 3,
                 "coos": [
                     [
                         [
@@ -4544,7 +4544,7 @@
                 ]
             },
             {
-                "type": "Gesch\u00fctzter Radfahrstreifen",
+                "type": 1,
                 "coos": [
                     [
                         13.2831546153,
@@ -4557,7 +4557,7 @@
                 ]
             },
             {
-                "type": "Baulich getrennter Radweg",
+                "type": 0,
                 "coos": [
                     [
                         13.3860481695,
@@ -4614,7 +4614,7 @@
                 ]
             },
             {
-                "type": "Baulich getrennter Radweg",
+                "type": 0,
                 "coos": [
                     [
                         13.4803085401,
@@ -4648,7 +4648,7 @@
         "quartal": "1.2020",
         "projects": [
             {
-                "type": "Baulich getrennter Radweg",
+                "type": 0,
                 "coos": [
                     [
                         [
@@ -4738,7 +4738,7 @@
         "quartal": "2.2020",
         "projects": [
             {
-                "type": "Querungshilfe",
+                "type": 4,
                 "coos": [
                     [
                         13.2808872006,
@@ -4799,7 +4799,7 @@
                 ]
             },
             {
-                "type": "Querungshilfe",
+                "type": 4,
                 "coos": [
                     [
                         13.2808872006,
@@ -4860,7 +4860,7 @@
                 ]
             },
             {
-                "type": "Radfahrstreifen",
+                "type": 1,
                 "coos": [
                     [
                         [
@@ -5245,7 +5245,7 @@
                 ]
             },
             {
-                "type": "Radfahrstreifen",
+                "type": 1,
                 "coos": [
                     [
                         [
@@ -5630,7 +5630,7 @@
                 ]
             },
             {
-                "type": "Radfahrstreifen",
+                "type": 1,
                 "coos": [
                     [
                         [
@@ -6015,7 +6015,7 @@
                 ]
             },
             {
-                "type": "Radfahrstreifen",
+                "type": 1,
                 "coos": [
                     [
                         [
@@ -6400,7 +6400,7 @@
                 ]
             },
             {
-                "type": "Radfahrstreifen",
+                "type": 1,
                 "coos": [
                     [
                         [
@@ -6785,7 +6785,7 @@
                 ]
             },
             {
-                "type": "Radfahrstreifen",
+                "type": 1,
                 "coos": [
                     [
                         [
@@ -6822,7 +6822,7 @@
                 ]
             },
             {
-                "type": "Tempor\u00e4re Radfahrstreifen",
+                "type": 3,
                 "coos": [
                     [
                         [
@@ -6971,7 +6971,7 @@
                 ]
             },
             {
-                "type": "Tempor\u00e4re Radfahrstreifen",
+                "type": 3,
                 "coos": [
                     [
                         [
@@ -7192,7 +7192,7 @@
                 ]
             },
             {
-                "type": "Baulich getrennter Radweg",
+                "type": 0,
                 "coos": [
                     [
                         13.347272,
@@ -7249,7 +7249,7 @@
                 ]
             },
             {
-                "type": "Zweirichtungsradweg",
+                "type": 1,
                 "coos": [
                     [
                         13.3476011003,
@@ -7326,7 +7326,7 @@
                 ]
             },
             {
-                "type": "Zweirichtungsradweg",
+                "type": 1,
                 "coos": [
                     [
                         13.3476011003,
@@ -7403,7 +7403,7 @@
                 ]
             },
             {
-                "type": "Zweirichtungsradweg",
+                "type": 1,
                 "coos": [
                     [
                         13.3476011003,
@@ -7480,7 +7480,7 @@
                 ]
             },
             {
-                "type": "Tempor\u00e4re Radfahrstreifen",
+                "type": 3,
                 "coos": [
                     [
                         [
@@ -8499,7 +8499,7 @@
                 ]
             },
             {
-                "type": "Tempor\u00e4re Radfahrstreifen",
+                "type": 3,
                 "coos": [
                     [
                         [
@@ -9518,7 +9518,7 @@
                 ]
             },
             {
-                "type": "Tempor\u00e4re Radfahrstreifen",
+                "type": 3,
                 "coos": [
                     [
                         [
@@ -10542,7 +10542,7 @@
         "quartal": "3.2020",
         "projects": [
             {
-                "type": "Gemeinsamer Geh- und Radweg",
+                "type": 1,
                 "coos": [
                     [
                         13.6164358997,
@@ -10635,7 +10635,7 @@
                 ]
             },
             {
-                "type": "Gemeinsamer Geh- und Radweg",
+                "type": 1,
                 "coos": [
                     [
                         [
@@ -10888,7 +10888,7 @@
                 ]
             },
             {
-                "type": "Radfahrstreifen",
+                "type": 1,
                 "coos": [
                     [
                         [
@@ -11125,7 +11125,7 @@
                 ]
             },
             {
-                "type": "Radfahrstreifen",
+                "type": 1,
                 "coos": [
                     [
                         [
@@ -11386,7 +11386,7 @@
                 ]
             },
             {
-                "type": "Schutzstreifen",
+                "type": 3,
                 "coos": [
                     [
                         [
@@ -11491,7 +11491,7 @@
                 ]
             },
             {
-                "type": "Schutzstreifen",
+                "type": 3,
                 "coos": [
                     [
                         [
@@ -11596,7 +11596,7 @@
                 ]
             },
             {
-                "type": "Baulich getrennter Radweg",
+                "type": 0,
                 "coos": [
                     [
                         13.3982823002,
@@ -11645,7 +11645,7 @@
                 ]
             },
             {
-                "type": "Gemeinsamer Geh- und Radweg",
+                "type": 1,
                 "coos": [
                     [
                         [
@@ -11702,7 +11702,7 @@
                 ]
             },
             {
-                "type": "Sonderweg",
+                "type": 1,
                 "coos": [
                     [
                         13.5190125998,
@@ -11812,7 +11812,7 @@
         "quartal": "4.2020",
         "projects": [
             {
-                "type": "Gesch\u00fctzter Radfahrstreifen",
+                "type": 1,
                 "coos": [
                     [
                         13.2822788998,
@@ -11857,7 +11857,7 @@
                 ]
             },
             {
-                "type": "Radfahrstreifen",
+                "type": 1,
                 "coos": [
                     [
                         [
@@ -12018,7 +12018,7 @@
                 ]
             },
             {
-                "type": "Baulich getrennter Radweg",
+                "type": 0,
                 "coos": [
                     [
                         [
@@ -12077,7 +12077,7 @@
                 ]
             },
             {
-                "type": "Gesch\u00fctzter Radfahrstreifen",
+                "type": 1,
                 "coos": [
                     [
                         13.218386596,
@@ -12094,7 +12094,7 @@
                 ]
             },
             {
-                "type": "Baulich getrennter Radweg",
+                "type": 0,
                 "coos": [
                     [
                         [
@@ -12243,7 +12243,7 @@
                 ]
             },
             {
-                "type": "Sonderweg",
+                "type": 1,
                 "coos": [
                     [
                         13.1242505006,
@@ -12336,7 +12336,7 @@
                 ]
             },
             {
-                "type": "Fahrradstra\u00dfe",
+                "type": 0,
                 "coos": [
                     [
                         [
@@ -12498,7 +12498,7 @@
         "quartal": "1.2021",
         "projects": [
             {
-                "type": "Bussonderfahrstreifen",
+                "type": 2,
                 "coos": [
                     [
                         [
@@ -12753,7 +12753,7 @@
                 ]
             },
             {
-                "type": "Bussonderfahrstreifen",
+                "type": 2,
                 "coos": [
                     [
                         [
@@ -13008,7 +13008,7 @@
                 ]
             },
             {
-                "type": "Baulich getrennter Radweg",
+                "type": 0,
                 "coos": [
                     [
                         13.3737831333,
@@ -13041,7 +13041,7 @@
                 ]
             },
             {
-                "type": "Gesch\u00fctzter Radfahrstreifen",
+                "type": 1,
                 "coos": [
                     [
                         13.3897324006,
@@ -13162,7 +13162,7 @@
                 ]
             },
             {
-                "type": "Baulich getrennter Radweg",
+                "type": 0,
                 "coos": [
                     [
                         13.3589966002,
@@ -13199,7 +13199,7 @@
                 ]
             },
             {
-                "type": "Baulich getrennter Radweg",
+                "type": 0,
                 "coos": [
                     [
                         [
@@ -13299,7 +13299,7 @@
         "quartal": "2.2021",
         "projects": [
             {
-                "type": "Gemeinsamer Geh- und Radweg",
+                "type": 1,
                 "coos": [
                     [
                         [
@@ -13546,7 +13546,7 @@
                 ]
             },
             {
-                "type": "Baulich getrennter Radweg",
+                "type": 0,
                 "coos": [
                     [
                         [
@@ -13621,7 +13621,7 @@
                 ]
             },
             {
-                "type": "Baulich getrennter Radweg",
+                "type": 0,
                 "coos": [
                     [
                         13.2774548022,
@@ -13662,7 +13662,7 @@
                 ]
             },
             {
-                "type": "Gemeinsamer Geh- und Radweg",
+                "type": 1,
                 "coos": [
                     [
                         13.6043491995,
@@ -13683,7 +13683,7 @@
                 ]
             },
             {
-                "type": "Gesch\u00fctzter Radfahrstreifen",
+                "type": 1,
                 "coos": [
                     [
                         13.4077492996,
@@ -13824,7 +13824,7 @@
                 ]
             },
             {
-                "type": "Fahrradstra\u00dfe",
+                "type": 0,
                 "coos": [
                     [
                         [
@@ -13881,7 +13881,7 @@
                 ]
             },
             {
-                "type": "Gesch\u00fctzter Radfahrstreifen",
+                "type": 1,
                 "coos": [
                     [
                         [
@@ -14150,7 +14150,7 @@
                 ]
             },
             {
-                "type": "Baulich getrennter Radweg",
+                "type": 0,
                 "coos": [
                     [
                         13.3797689588,
@@ -14163,7 +14163,7 @@
                 ]
             },
             {
-                "type": "Baulich getrennter Radweg",
+                "type": 0,
                 "coos": [
                     [
                         [
@@ -14666,7 +14666,7 @@
                 ]
             },
             {
-                "type": "Baulich getrennter Radweg",
+                "type": 0,
                 "coos": [
                     [
                         [
@@ -15169,7 +15169,7 @@
                 ]
             },
             {
-                "type": "Baulich getrennter Radweg",
+                "type": 0,
                 "coos": [
                     [
                         [
@@ -15672,7 +15672,7 @@
                 ]
             },
             {
-                "type": "Baulich getrennter Radweg",
+                "type": 0,
                 "coos": [
                     [
                         [
@@ -16175,7 +16175,7 @@
                 ]
             },
             {
-                "type": "Baulich getrennter Radweg",
+                "type": 0,
                 "coos": [
                     [
                         [
@@ -16678,7 +16678,7 @@
                 ]
             },
             {
-                "type": "Baulich getrennter Radweg",
+                "type": 0,
                 "coos": [
                     [
                         13.4323878892,
@@ -16724,7 +16724,7 @@
         "quartal": "3.2021",
         "projects": [
             {
-                "type": "Fahrradstra\u00dfe",
+                "type": 0,
                 "coos": [
                     [
                         [
@@ -16803,7 +16803,7 @@
                 ]
             },
             {
-                "type": "Fahrradstra\u00dfe",
+                "type": 0,
                 "coos": [
                     [
                         [
@@ -16882,7 +16882,7 @@
                 ]
             },
             {
-                "type": "Sonderweg",
+                "type": 1,
                 "coos": [
                     [
                         13.4519793902,
@@ -16923,7 +16923,7 @@
                 ]
             },
             {
-                "type": "Sonderweg",
+                "type": 1,
                 "coos": [
                     [
                         13.4519793902,
@@ -16964,7 +16964,7 @@
                 ]
             },
             {
-                "type": "Gesch\u00fctzter Radfahrstreifen",
+                "type": 1,
                 "coos": [
                     [
                         [
@@ -17177,7 +17177,7 @@
                 ]
             },
             {
-                "type": "Radfahrstreifen",
+                "type": 1,
                 "coos": [
                     [
                         13.5030865689,
@@ -17302,7 +17302,7 @@
                 ]
             },
             {
-                "type": "Baulich getrennter Radweg",
+                "type": 0,
                 "coos": [
                     [
                         [
@@ -17464,7 +17464,7 @@
         "quartal": "4.2021",
         "projects": [
             {
-                "type": "Zweirichtungsradweg",
+                "type": 1,
                 "coos": [
                     [
                         [
@@ -17605,7 +17605,7 @@
                 ]
             },
             {
-                "type": "Zweirichtungsradweg",
+                "type": 1,
                 "coos": [
                     [
                         13.2739224,
@@ -17626,7 +17626,7 @@
                 ]
             },
             {
-                "type": "Zweirichtungsradweg",
+                "type": 1,
                 "coos": [
                     [
                         13.2739224,
@@ -17647,7 +17647,7 @@
                 ]
             },
             {
-                "type": "Baulich getrennter Radweg",
+                "type": 0,
                 "coos": [
                     [
                         [
@@ -17684,7 +17684,7 @@
                 ]
             },
             {
-                "type": "Gesch\u00fctzter Radfahrstreifen",
+                "type": 1,
                 "coos": [
                     [
                         13.3919590994,
@@ -17953,7 +17953,7 @@
                 ]
             },
             {
-                "type": "Gesch\u00fctzter Radfahrstreifen",
+                "type": 1,
                 "coos": [
                     [
                         13.3919590994,
@@ -18222,7 +18222,7 @@
                 ]
             },
             {
-                "type": "Baulich getrennter Radweg",
+                "type": 0,
                 "coos": [
                     [
                         [
@@ -18419,7 +18419,7 @@
                 ]
             },
             {
-                "type": "Fahrradstra\u00dfe",
+                "type": 0,
                 "coos": [
                     [
                         [
@@ -18962,7 +18962,7 @@
                 ]
             },
             {
-                "type": "Fahrradstra\u00dfe",
+                "type": 0,
                 "coos": [
                     [
                         [
@@ -19505,7 +19505,7 @@
                 ]
             },
             {
-                "type": "Fahrradstra\u00dfe",
+                "type": 0,
                 "coos": [
                     [
                         13.3737484006,
@@ -19614,7 +19614,7 @@
                 ]
             },
             {
-                "type": "Radfahrstreifen",
+                "type": 1,
                 "coos": [
                     [
                         13.4699783608,
@@ -19655,7 +19655,7 @@
                 ]
             },
             {
-                "type": "Bussonderfahrstreifen",
+                "type": 2,
                 "coos": [
                     [
                         [
@@ -19916,7 +19916,7 @@
                 ]
             },
             {
-                "type": "Fahrradstra\u00dfe",
+                "type": 0,
                 "coos": [
                     [
                         [
@@ -19965,7 +19965,7 @@
                 ]
             },
             {
-                "type": "Fahrradstra\u00dfe",
+                "type": 0,
                 "coos": [
                     [
                         [
@@ -20014,7 +20014,7 @@
                 ]
             },
             {
-                "type": "Fahrradstra\u00dfe",
+                "type": 0,
                 "coos": [
                     [
                         [
@@ -20307,7 +20307,7 @@
                 ]
             },
             {
-                "type": "Baulich getrennter Radweg",
+                "type": 0,
                 "coos": [
                     [
                         13.5143209375,
@@ -20380,7 +20380,7 @@
                 ]
             },
             {
-                "type": "Radfahrstreifen",
+                "type": 1,
                 "coos": [
                     [
                         [
@@ -20515,7 +20515,7 @@
                 ]
             },
             {
-                "type": "Radfahrstreifen",
+                "type": 1,
                 "coos": [
                     [
                         [
@@ -20650,7 +20650,7 @@
                 ]
             },
             {
-                "type": "Baulich getrennter Radweg",
+                "type": 0,
                 "coos": [
                     [
                         13.3490960999,
@@ -20752,7 +20752,7 @@
         "quartal": "1.2022",
         "projects": [
             {
-                "type": "Radfahrstreifen",
+                "type": 1,
                 "coos": [
                     [
                         [
@@ -20807,7 +20807,7 @@
                 ]
             },
             {
-                "type": "Baulich getrennter Radweg",
+                "type": 0,
                 "coos": [
                     [
                         [
@@ -20865,7 +20865,7 @@
         "quartal": "2.2022",
         "projects": [
             {
-                "type": "Radfahrstreifen",
+                "type": 1,
                 "coos": [
                     [
                         [
@@ -20976,7 +20976,7 @@
                 ]
             },
             {
-                "type": "Schutzstreifen",
+                "type": 3,
                 "coos": [
                     [
                         [
@@ -21251,7 +21251,7 @@
                 ]
             },
             {
-                "type": "Radfahrstreifen",
+                "type": 1,
                 "coos": [
                     [
                         13.5821782005,
@@ -21308,7 +21308,7 @@
                 ]
             },
             {
-                "type": "Querungshilfe",
+                "type": 4,
                 "coos": [
                     [
                         13.5173603,
@@ -21469,7 +21469,7 @@
                 ]
             },
             {
-                "type": "Querungshilfe",
+                "type": 4,
                 "coos": [
                     [
                         13.5173603,
@@ -21630,7 +21630,7 @@
                 ]
             },
             {
-                "type": "Fahrradstra\u00dfe",
+                "type": 0,
                 "coos": [
                     [
                         [
@@ -21723,7 +21723,7 @@
                 ]
             },
             {
-                "type": "Baulich getrennter Radweg",
+                "type": 0,
                 "coos": [
                     [
                         13.4752087995,
@@ -21784,7 +21784,7 @@
                 ]
             },
             {
-                "type": "Gesch\u00fctzter Radfahrstreifen",
+                "type": 1,
                 "coos": [
                     [
                         [
@@ -21901,7 +21901,7 @@
                 ]
             },
             {
-                "type": "Radfahrstreifen",
+                "type": 1,
                 "coos": [
                     [
                         [
@@ -22002,7 +22002,7 @@
                 ]
             },
             {
-                "type": "Radfahrstreifen",
+                "type": 1,
                 "coos": [
                     [
                         [
@@ -22103,7 +22103,7 @@
                 ]
             },
             {
-                "type": "Baulich getrennter Radweg",
+                "type": 0,
                 "coos": [
                     [
                         13.4016623993,
@@ -22224,7 +22224,7 @@
                 ]
             },
             {
-                "type": "Schutzstreifen",
+                "type": 3,
                 "coos": [
                     [
                         13.5191924001,
@@ -22289,7 +22289,7 @@
                 ]
             },
             {
-                "type": "Schutzstreifen",
+                "type": 3,
                 "coos": [
                     [
                         13.3282292,
@@ -22398,7 +22398,7 @@
                 ]
             },
             {
-                "type": "Baulich getrennter Radweg",
+                "type": 0,
                 "coos": [
                     [
                         13.3865251002,
@@ -22468,7 +22468,7 @@
         "quartal": "3.2022",
         "projects": [
             {
-                "type": "Zweirichtungsradweg",
+                "type": 1,
                 "coos": [
                     [
                         [
@@ -22903,7 +22903,7 @@
                 ]
             },
             {
-                "type": "Zweirichtungsradweg",
+                "type": 1,
                 "coos": [
                     [
                         [
@@ -23338,7 +23338,7 @@
                 ]
             },
             {
-                "type": "Zweirichtungsradweg",
+                "type": 1,
                 "coos": [
                     [
                         [
@@ -23773,7 +23773,7 @@
                 ]
             },
             {
-                "type": "Schutzstreifen",
+                "type": 3,
                 "coos": [
                     [
                         13.5098054994,
@@ -23982,7 +23982,7 @@
                 ]
             },
             {
-                "type": "Schutzstreifen",
+                "type": 3,
                 "coos": [
                     [
                         13.5098054994,
@@ -24191,7 +24191,7 @@
                 ]
             },
             {
-                "type": "Schutzstreifen",
+                "type": 3,
                 "coos": [
                     [
                         13.5098054994,
@@ -24400,7 +24400,7 @@
                 ]
             },
             {
-                "type": "Schutzstreifen",
+                "type": 3,
                 "coos": [
                     [
                         [
@@ -24659,7 +24659,7 @@
                 ]
             },
             {
-                "type": "Schutzstreifen",
+                "type": 3,
                 "coos": [
                     [
                         [
@@ -24918,7 +24918,7 @@
                 ]
             },
             {
-                "type": "Baulich getrennter Radweg",
+                "type": 0,
                 "coos": [
                     [
                         [
@@ -25031,7 +25031,7 @@
                 ]
             },
             {
-                "type": "Fahrradstra\u00dfe",
+                "type": 0,
                 "coos": [
                     [
                         13.4047266249,
@@ -25088,7 +25088,7 @@
                 ]
             },
             {
-                "type": "Schutzstreifen",
+                "type": 3,
                 "coos": [
                     [
                         13.3250586998,
@@ -25194,7 +25194,7 @@
         "quartal": "4.2022",
         "projects": [
             {
-                "type": "Baulich getrennter Radweg",
+                "type": 0,
                 "coos": [
                     [
                         [
@@ -25525,7 +25525,7 @@
                 ]
             },
             {
-                "type": "Radfahrstreifen",
+                "type": 1,
                 "coos": [
                     [
                         13.3288476996,
@@ -25550,7 +25550,7 @@
                 ]
             },
             {
-                "type": "Querungshilfe",
+                "type": 4,
                 "coos": [
                     [
                         13.3907277579,
@@ -25619,7 +25619,7 @@
                 ]
             },
             {
-                "type": "Querungshilfe",
+                "type": 4,
                 "coos": [
                     [
                         13.3907277579,
@@ -25688,7 +25688,7 @@
                 ]
             },
             {
-                "type": "Radfahrstreifen",
+                "type": 1,
                 "coos": [
                     [
                         [
@@ -26093,7 +26093,7 @@
                 ]
             },
             {
-                "type": "Radfahrstreifen",
+                "type": 1,
                 "coos": [
                     [
                         [
@@ -26498,7 +26498,7 @@
                 ]
             },
             {
-                "type": "Gesch\u00fctzter Radfahrstreifen",
+                "type": 1,
                 "coos": [
                     [
                         [
@@ -26575,7 +26575,7 @@
                 ]
             },
             {
-                "type": "Gesch\u00fctzter Radfahrstreifen",
+                "type": 1,
                 "coos": [
                     [
                         [
@@ -26992,7 +26992,7 @@
                 ]
             },
             {
-                "type": "Gesch\u00fctzter Radfahrstreifen",
+                "type": 1,
                 "coos": [
                     [
                         [
@@ -27129,7 +27129,7 @@
                 ]
             },
             {
-                "type": "Gesch\u00fctzter Radfahrstreifen",
+                "type": 1,
                 "coos": [
                     [
                         13.4105484994,
@@ -27182,7 +27182,7 @@
                 ]
             },
             {
-                "type": "Gesch\u00fctzter Radfahrstreifen",
+                "type": 1,
                 "coos": [
                     [
                         13.4601261999,
@@ -27307,7 +27307,7 @@
                 ]
             },
             {
-                "type": "Baulich getrennter Radweg",
+                "type": 0,
                 "coos": [
                     [
                         [
@@ -27434,7 +27434,7 @@
                 ]
             },
             {
-                "type": "Baulich getrennter Radweg",
+                "type": 0,
                 "coos": [
                     [
                         [
@@ -27561,7 +27561,7 @@
                 ]
             },
             {
-                "type": "Fahrradstra\u00dfe",
+                "type": 0,
                 "coos": [
                     [
                         13.4795312004,
@@ -27594,7 +27594,7 @@
                 ]
             },
             {
-                "type": "Sonderweg",
+                "type": 1,
                 "coos": [
                     [
                         13.5694349998,
@@ -27659,7 +27659,7 @@
                 ]
             },
             {
-                "type": "Querungshilfe",
+                "type": 4,
                 "coos": [
                     [
                         [
@@ -27868,7 +27868,7 @@
                 ]
             },
             {
-                "type": "Querungshilfe",
+                "type": 4,
                 "coos": [
                     [
                         [
@@ -28077,7 +28077,7 @@
                 ]
             },
             {
-                "type": "Querungshilfe",
+                "type": 4,
                 "coos": [
                     [
                         [
@@ -28286,7 +28286,7 @@
                 ]
             },
             {
-                "type": "Radfahrstreifen",
+                "type": 1,
                 "coos": [
                     [
                         13.4674999997,
@@ -28379,7 +28379,7 @@
                 ]
             },
             {
-                "type": "Gesch\u00fctzter Radfahrstreifen",
+                "type": 1,
                 "coos": [
                     [
                         [
@@ -28564,7 +28564,7 @@
                 ]
             },
             {
-                "type": "Gesch\u00fctzter Radfahrstreifen",
+                "type": 1,
                 "coos": [
                     [
                         [
@@ -28749,7 +28749,7 @@
                 ]
             },
             {
-                "type": "Radfahrstreifen",
+                "type": 1,
                 "coos": [
                     [
                         13.3794862998,
@@ -28846,7 +28846,7 @@
                 ]
             },
             {
-                "type": "Gesch\u00fctzter Radfahrstreifen",
+                "type": 1,
                 "coos": [
                     [
                         [
@@ -29097,7 +29097,7 @@
                 ]
             },
             {
-                "type": "Gesch\u00fctzter Radfahrstreifen",
+                "type": 1,
                 "coos": [
                     [
                         [
@@ -29398,7 +29398,7 @@
                 ]
             },
             {
-                "type": "Gesch\u00fctzter Radfahrstreifen",
+                "type": 1,
                 "coos": [
                     [
                         [
@@ -29699,7 +29699,7 @@
                 ]
             },
             {
-                "type": "Gesch\u00fctzter Radfahrstreifen",
+                "type": 1,
                 "coos": [
                     [
                         [
@@ -30000,7 +30000,7 @@
                 ]
             },
             {
-                "type": "Radfahrstreifen",
+                "type": 1,
                 "coos": [
                     [
                         13.2300289996,
@@ -30049,7 +30049,7 @@
                 ]
             },
             {
-                "type": "Fahrradstra\u00dfe",
+                "type": 0,
                 "coos": [
                     [
                         13.4135641995,
@@ -30154,7 +30154,7 @@
                 ]
             },
             {
-                "type": "Fahrradstra\u00dfe",
+                "type": 0,
                 "coos": [
                     [
                         13.4135641995,
@@ -30259,7 +30259,7 @@
                 ]
             },
             {
-                "type": "Fahrradstra\u00dfe",
+                "type": 0,
                 "coos": [
                     [
                         13.4315415995,
@@ -30300,7 +30300,7 @@
                 ]
             },
             {
-                "type": "Radfahrstreifen",
+                "type": 1,
                 "coos": [
                     [
                         [
@@ -30455,7 +30455,7 @@
                 ]
             },
             {
-                "type": "Radfahrstreifen",
+                "type": 1,
                 "coos": [
                     [
                         [
@@ -30615,7 +30615,7 @@
         "quartal": "1.2023",
         "projects": [
             {
-                "type": "Gesch\u00fctzter Radfahrstreifen",
+                "type": 1,
                 "coos": [
                     [
                         [
@@ -30713,7 +30713,7 @@
         "quartal": "2.2023",
         "projects": [
             {
-                "type": "Tempor\u00e4re Radfahrstreifen",
+                "type": 3,
                 "coos": [
                     [
                         13.3621342002,
@@ -30791,7 +30791,7 @@
         "quartal": "3.2023",
         "projects": [
             {
-                "type": "Gesch\u00fctzter Radfahrstreifen",
+                "type": 1,
                 "coos": [
                     [
                         [
@@ -31030,7 +31030,7 @@
                 ]
             },
             {
-                "type": "Radfahrstreifen",
+                "type": 1,
                 "coos": [
                     [
                         [
@@ -31363,7 +31363,7 @@
                 ]
             },
             {
-                "type": "Radfahrstreifen",
+                "type": 1,
                 "coos": [
                     [
                         [
@@ -31696,7 +31696,7 @@
                 ]
             },
             {
-                "type": "Baulich getrennter Radweg",
+                "type": 0,
                 "coos": [
                     [
                         [
@@ -31817,7 +31817,7 @@
                 ]
             },
             {
-                "type": "Sonderweg",
+                "type": 1,
                 "coos": [
                     [
                         [
@@ -31970,7 +31970,7 @@
                 ]
             },
             {
-                "type": "Sonderweg",
+                "type": 1,
                 "coos": [
                     [
                         [
@@ -32123,7 +32123,7 @@
                 ]
             },
             {
-                "type": "Gesch\u00fctzter Radfahrstreifen",
+                "type": 1,
                 "coos": [
                     [
                         [
@@ -32724,7 +32724,7 @@
                 ]
             },
             {
-                "type": "Gesch\u00fctzter Radfahrstreifen",
+                "type": 1,
                 "coos": [
                     [
                         [
@@ -33325,7 +33325,7 @@
                 ]
             },
             {
-                "type": "Gesch\u00fctzter Radfahrstreifen",
+                "type": 1,
                 "coos": [
                     [
                         [
@@ -33926,7 +33926,7 @@
                 ]
             },
             {
-                "type": "Radfahrstreifen",
+                "type": 1,
                 "coos": [
                     [
                         13.4258335496,
@@ -33952,7 +33952,7 @@
         "quartal": "4.2023",
         "projects": [
             {
-                "type": "Fahrradstra\u00dfe",
+                "type": 0,
                 "coos": [
                     [
                         [
@@ -34051,7 +34051,7 @@
                 ]
             },
             {
-                "type": "Fahrradstra\u00dfe",
+                "type": 0,
                 "coos": [
                     [
                         [
@@ -34204,7 +34204,7 @@
                 ]
             },
             {
-                "type": "Gesch\u00fctzter Radfahrstreifen",
+                "type": 1,
                 "coos": [
                     [
                         [
@@ -34463,7 +34463,7 @@
                 ]
             },
             {
-                "type": "Gesch\u00fctzter Radfahrstreifen",
+                "type": 1,
                 "coos": [
                     [
                         [
@@ -34586,7 +34586,7 @@
                 ]
             },
             {
-                "type": "Querungshilfe",
+                "type": 4,
                 "coos": [
                     [
                         [
@@ -35031,7 +35031,7 @@
                 ]
             },
             {
-                "type": "Querungshilfe",
+                "type": 4,
                 "coos": [
                     [
                         [
@@ -35476,7 +35476,7 @@
                 ]
             },
             {
-                "type": "Baulich getrennter Radweg",
+                "type": 0,
                 "coos": [
                     [
                         [
@@ -35517,7 +35517,7 @@
                 ]
             },
             {
-                "type": "Baulich getrennter Radweg",
+                "type": 0,
                 "coos": [
                     [
                         [
@@ -35558,7 +35558,7 @@
                 ]
             },
             {
-                "type": "Fahrradstra\u00dfe",
+                "type": 0,
                 "coos": [
                     [
                         13.4095980998,
@@ -35615,7 +35615,7 @@
                 ]
             },
             {
-                "type": "Radfahrstreifen",
+                "type": 1,
                 "coos": [
                     [
                         [
@@ -35662,7 +35662,7 @@
                 ]
             },
             {
-                "type": "Radfahrstreifen",
+                "type": 1,
                 "coos": [
                     [
                         [
@@ -35709,7 +35709,7 @@
                 ]
             },
             {
-                "type": "Baulich getrennter Radweg",
+                "type": 0,
                 "coos": [
                     [
                         13.2752146027,
@@ -35742,7 +35742,7 @@
                 ]
             },
             {
-                "type": "Fahrradstra\u00dfe",
+                "type": 0,
                 "coos": [
                     [
                         [
@@ -35801,7 +35801,7 @@
                 ]
             },
             {
-                "type": "Gemeinsamer Geh- und Radweg",
+                "type": 1,
                 "coos": [
                     [
                         13.2916107005,
@@ -35910,7 +35910,7 @@
                 ]
             },
             {
-                "type": "Gemeinsamer Geh- und Radweg",
+                "type": 1,
                 "coos": [
                     [
                         13.3546924995,
@@ -36151,7 +36151,7 @@
                 ]
             },
             {
-                "type": "Fahrradstra\u00dfe",
+                "type": 0,
                 "coos": [
                     [
                         [
@@ -36706,7 +36706,7 @@
                 ]
             },
             {
-                "type": "Gesch\u00fctzter Radfahrstreifen",
+                "type": 1,
                 "coos": [
                     [
                         [
@@ -36763,7 +36763,7 @@
                 ]
             },
             {
-                "type": "Baulich getrennter Radweg",
+                "type": 0,
                 "coos": [
                     [
                         [
@@ -37012,7 +37012,7 @@
                 ]
             },
             {
-                "type": "Fahrradstra\u00dfe",
+                "type": 0,
                 "coos": [
                     [
                         [
@@ -37149,7 +37149,7 @@
                 ]
             },
             {
-                "type": "Fahrradstra\u00dfe",
+                "type": 0,
                 "coos": [
                     [
                         [
@@ -37286,7 +37286,7 @@
                 ]
             },
             {
-                "type": "Baulich getrennter Radweg",
+                "type": 0,
                 "coos": [
                     [
                         [
@@ -37481,7 +37481,7 @@
                 ]
             },
             {
-                "type": "Gesch\u00fctzter Radfahrstreifen",
+                "type": 1,
                 "coos": [
                     [
                         13.4510318995,
@@ -37546,7 +37546,7 @@
                 ]
             },
             {
-                "type": "Fahrradstra\u00dfe",
+                "type": 0,
                 "coos": [
                     [
                         13.4665335006,
