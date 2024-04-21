@@ -5,12 +5,12 @@ class Projekt:
     
 
     
-    def __init__(self, type, year, start, stop):
+    def __init__(self, type, year, start, stop, koords):
         self.type = type
         self.year = year 
         self.start = start
         self.stop = stop
-        self.koords = None
+        self.koords = koords
     
     
     

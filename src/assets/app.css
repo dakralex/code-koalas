@@ -187,3 +187,11 @@ ul {
         animation: logo-spin infinite 20s linear;
     }
 }
+
+.custom-marker-icon {
+  width: 2px; /* Adjust the width as needed */
+  height: 2px; /* Adjust the height as needed */
+  background-color: red; /* Just for demonstration */
+  border-radius: 50%; /* Optional: Makes the marker round */
+}
+
