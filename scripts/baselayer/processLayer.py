@@ -37,11 +37,20 @@ for road in data:
     if (typ == ""): continue
     typ = ProjectTypes[typ]
                 
-                
     
     stuff = road.get("geometry")
     koords = stuff.get("coordinates")
 
+
+    if isinstance(koords[0][0], list):
+        kor = koords.copy()
+        koords.clear()
+        for i in kor:
+            for j in i:
+                koords.append(j)                            
+        
+        
+        
     bikeRoads.append(Road(typ, koords))
 
 
