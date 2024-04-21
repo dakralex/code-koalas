@@ -44,8 +44,7 @@ body {
 }
 
 #root {
-    display: grid;
-    grid-template-columns: 2fr 8fr;
+    display: flex;
     width: 100%;
     min-height: inherit;
     margin: 0 auto;
@@ -150,14 +149,6 @@ ul {
     list-style-type: decimal;
 }
 
-.sidebar, .timeline {
-    background-color: var(--foreground);
-}
-
-.map-container {
-    display: flex;
-}
-
 .logo {
     height: 6em;
     padding: 1.5em;
@@ -188,10 +179,23 @@ ul {
     }
 }
 
-.custom-marker-icon {
-  width: 2px; /* Adjust the width as needed */
-  height: 2px; /* Adjust the height as needed */
-  background-color: red; /* Just for demonstration */
-  border-radius: 50%; /* Optional: Makes the marker round */
+.custom-marker-icon-minor {
+    width: .125rem;
+    height: .125rem;
+    border-radius: 50%;
+    background-color: var(--green);
 }
 
+.custom-marker-icon-major {
+    width: .25rem;
+    height: .25rem;
+    border-radius: 50%;
+    background-color: var(--orange);
+}
+
+.custom-marker-icon-critical {
+    width: .325rem;
+    height: .325rem;
+    border-radius: 50%;
+    background-color: var(--red);
+}

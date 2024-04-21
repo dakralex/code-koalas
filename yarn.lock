@@ -1336,6 +1336,11 @@ keyv@^4.5.3:
   dependencies:
     json-buffer "3.0.1"
 
+leaflet.glmarkers@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/leaflet.glmarkers/-/leaflet.glmarkers-1.1.0.tgz#980595523986a1b315fa7db1fc005a51a938b2ab"
+  integrity sha512-iiRT3GcIN7JF4X1h4m1jSrnlsx39EDwbAP1Klxmdl0jtKTieeh2u8wauHJDgPn6ikbLeOa2e26HfugOgAyCTGQ==
+
 leaflet@^1.9.4:
   version "1.9.4"
   resolved "https://registry.yarnpkg.com/leaflet/-/leaflet-1.9.4.tgz#23fae724e282fa25745aff82ca4d394748db7d8d"
