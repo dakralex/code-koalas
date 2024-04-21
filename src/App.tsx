@@ -9,6 +9,7 @@ import {useEffect, useState} from 'react';
 import accidents from '../data/processed/accidents.json';
 
 
+
 function Point({ long, lat }: { long: number, lat: number }) {
   const context = useLeafletContext();
 
@@ -52,12 +53,38 @@ const App = () => {
     const centerCoords = new LatLng((minLat + maxLat) / 2, (minLongs + maxLongs) / 2);
     const [accidentCoords, setAccidentCoords] = useState<LatLng[]>([]);
 
-    useEffect(() => {
-      console.log('Accidents:', accidents); // Check if accidents data is being loaded correctly
-      const coords = accidents.map((accident: any) => new LatLng(accident.lat, accident.lng));
-      console.log('Parsed Coordinates:', coords); // Check the parsed coordinates
-      setAccidentCoords(coords);
-    }, []);
+
+
+
+useEffect(() => {
+  let i = 0;
+
+  const fetchDataAndPlot = () => {
+    const month = (i % 12) + 1;
+    const year = Math.floor(i / 12) + 2018;
+
+    const filteredAccidents = accidents.filter((accident: any) => accident.year === year && accident.month === month);
+    const coords = filteredAccidents.map((accident: any) => new LatLng(accident.lat, accident.lng));
+
+    setAccidentCoords(coords);
+
+    i = (i + 1) % 48;
+  };
+
+  const removePoints = () => {
+    setAccidentCoords([]);
+  };
+
+  const intervalId = setInterval(() => {
+    fetchDataAndPlot();
+    setTimeout(removePoints, 1000); // Remove points after one second
+  }, 2000); // Adjust interval to 2 seconds to account for 1 second delay
+
+  // Clean up the interval when the component unmounts
+  return () => clearInterval(intervalId);
+}, []);
+
+
 
     return (
         <>
