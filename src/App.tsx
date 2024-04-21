@@ -1,12 +1,13 @@
-import './assets/app.css'; // Separate import statement for CSS file
+import './assets/app.css';
 import 'leaflet/dist/leaflet.css';
+import accidents from '../data/processed/accidents.json';
+import BASE_LAYER from '../data/processed/baseLayer.json';
+
+import {useEffect, useState} from "react";
+import L, {LatLng, LatLngBounds} from "leaflet";
 import {MapContainer, Polyline} from "react-leaflet";
 import {useLeafletContext} from '@react-leaflet/core';
 import coords, {maxLat, maxLongs, minLat, minLongs} from "./globals/outline.ts";
-import {LatLng, LatLngBounds} from "leaflet";
-import L from 'leaflet';
-import {useEffect, useState} from 'react';
-import accidents from '../data/processed/accidents.json';
 
 
 
@@ -86,6 +87,21 @@ useEffect(() => {
 
 
 
+    const [lanes, setLanes] = useState([]);
+
+    useEffect(() => {
+        // @ts-ignore
+        const arr = Array.from(BASE_LAYER).map(item => {
+            // @ts-ignore
+            const latLngPts = item?.coos.map(pt => new LatLng(pt[1], pt[0]));
+
+            return <Polyline positions={latLngPts} />;
+        });
+
+        // @ts-ignore
+        setLanes(arr)
+    }, []);
+
     return (
         <>
             <div className="sidebar">
@@ -97,6 +113,7 @@ useEffect(() => {
                     {accidentCoords.map((coord, index) => (
                       <Point key={index} lat={coord.lat} long={coord.lng} />
                     ))}
+                    {...lanes}
                 </MapContainer>
             </div>
         </>
