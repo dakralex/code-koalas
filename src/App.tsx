@@ -21,8 +21,7 @@ const App = () => {
         const items = Array.from(baseBikeLanes).map(item => {
             // @ts-ignore
             const latLngPts = item?.coos.map(pt => new LatLng(pt[1], pt[0]));
-
-            return <Polyline positions={latLngPts}/>;
+            return <Polyline positions={latLngPts} pathOptions={{color: '#dedede', fillColor: 'none'}}/>;
         });
 
         // @ts-ignore
@@ -37,7 +36,7 @@ const App = () => {
 
             if (accident.sev === 1) {
                 severity = "critical";
-                iconSize = 11;
+                iconSize = 7;
             } else if (accident.sev === 2) {
                 severity = "major";
                 iconSize = 7;
@@ -63,7 +62,7 @@ const App = () => {
         <>
             <MapContainer bounds={mapBounds} center={centerCoords} zoom={11} zoomSnap={0.25}
                           style={{width: '100%', backgroundColor: '#242424'}} preferCanvas={true}>
-                <Polyline positions={outlineCoords} pathOptions={{color: '#dedede', fillColor: 'none'}}></Polyline>
+                <Polyline positions={outlineCoords} pathOptions={{color: '#dedede', fillColor: 'none'}} />
                 {...accidentPoints}
                 {...laneItems}
             </MapContainer>
