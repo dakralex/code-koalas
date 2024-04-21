@@ -1,5 +1,6 @@
 import {defineConfig} from 'vite'
 import react from '@vitejs/plugin-react'
+import glsl from 'vite-plugin-glsl'
 import postcssNesting from 'postcss-nesting'
 import postcssCustomMedia from 'postcss-custom-media'
 
@@ -9,7 +10,7 @@ export default defineConfig({
     build: {
         outDir: 'docs',
     },
-    plugins: [react()],
+    plugins: [react(), glsl()],
     css: {
         postcss: {
             plugins: [
