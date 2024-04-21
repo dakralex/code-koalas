@@ -13,17 +13,36 @@ function Point({ long, lat }: { long: number, lat: number }) {
   const context = useLeafletContext();
 
   useEffect(() => {
-    const latLng = L.latLng(lat, long); // Note the order of arguments
+    const latLng = L.latLng(lat, long);
     const container = context.map;
-    const marker = L.marker(latLng); // Create a marker using the LatLng object
-    marker.addTo(container);
+    let marker: any;
+
+    // Add a delay of 500 milliseconds before adding the marker
+    const addMarkerWithDelay = async () => {
+      await timeout(1000);
+      marker = L.marker(latLng, {
+        icon: L.divIcon({ className: 'custom-marker-icon', iconSize: [2, 2] }) // Adjust the iconSize as needed
+      });
+      marker.addTo(container);
+    };
+
+    addMarkerWithDelay();
 
     return () => {
-      marker.remove(); // Remove the marker when component unmounts
+      // Ensure that the marker is removed when the component unmounts
+      if (marker) {
+        container.removeLayer(marker);
+      }
     };
-  }, [context.layerContainer, context.map, lat, long]);
+  }, [context.map, lat, long]);
 
   return null;
+}
+
+
+// Function to create a delay
+function timeout(delay: number) {
+  return new Promise(res => setTimeout(res, delay));
 }
 //const COORDS = [...Array(15000)].map((_, i) => <Polyline key={i} positions={[[minLat , minLongs], [maxLat, maxLongs]]}/>);
 
@@ -48,9 +67,8 @@ const App = () => {
                 <MapContainer bounds={mapBounds} center={centerCoords} zoom={11} zoomSnap={0.25}
                               style={{width: '100%', backgroundColor: '#242424'}}>
                     <Polyline positions={outlineCoords} pathOptions={{color: '#dedede', fillColor: 'none'}}></Polyline>
-                   <Point lat={(minLat + maxLat) / 2} long={(minLongs + maxLongs) / 2}></Point>
                     {accidentCoords.map((coord, index) => (
-                      <Point key={index} lat={coord.lat} long = {coord.lng} />
+                      <Point key={index} lat={coord.lat} long={coord.lng} />
                     ))}
                 </MapContainer>
             </div>
